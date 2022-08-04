@@ -1,3 +1,18 @@
+# Python oop practice task
+
+<img width="399" alt="Human inheritance" src="https://user-images.githubusercontent.com/110182832/182912842-756fdd77-1cf1-40bb-851a-15b8ba625799.png">
+
+
+
+
+
+
+
+
+
+
+
+
 ## Step-1 Class Human and Abstraction
 
 - ## Create a class called human
