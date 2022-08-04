@@ -11,6 +11,16 @@
 
 
 
+## Steps in this task
+- Create a repo in github without README.md file
+-  Create a new pycharm project
+-  Create README.md file in pychharm and pushed from pycharm
+-  Create 5 python files (human, male, female, boy and girl)  created graph as above to follow inheritance
+-  Here, human is a parent tag and male and female are child tags.
+-  boy is child tag of male and girl is a child tag of female.
+-  
+-  
+
 
 
 ## Step-1 Class Human and Abstraction
@@ -33,15 +43,20 @@ class Human:
         return "at least 8 hrs"
 
 
-object_of_human = Human()
+### whenever class is created, you need to create object to call that class's functions and methods
+object_of_human = Human()  # object is created for Human class
 
 print(object_of_human.eyes)
 print(object_of_human.sleep())
 ````
 
-## Step - 2 - Male
+## Step - 2 - Male and Inheritance
 
-- ### From human file, please import Human class
+### Inheritance allows us to define a class that inherits all the methods and properties from another class.
+### Parent class is the class being inherited from, also called base class. Child class is the class that inherits from another class, also called derived class.
+
+
+- ### From human file, Human class has imported 
 ````
 from human import Human
 
@@ -76,7 +91,7 @@ print(object_Men.sleep())  # called from Human class
 ````
 from human import Human
 
-class Female(Human): # craeted a new class for Female
+class Female(Human): # craeted a new class for Female and (Human) to inherit from Human class in human file
 
     def __init__(self):
 
@@ -102,6 +117,17 @@ print(object.sleep())  # called from Human class
 
 ## Step -4 - Boy class and Encapsulatiom
 - ### Inherit calss called Female from female file
+- ### in Encapsulation there are three members
+- 1) public member ( accessible from that class and outside class)
+- 2) protected member (accessible within class and it's sub class)
+- 3) private member ( accessible only within a class)
+
+
+<img width="659" alt="Encapsulation_slide" src="https://user-images.githubusercontent.com/110182832/182938391-a52ce677-4779-460d-9444-b2726763f45b.png">
+
+
+
+
 
 ````
 from male import Men
@@ -113,7 +139,7 @@ class Boy(Men):  # inherited Men class
         super().__init__()   # super is used to inherit everything from parent class
         self.small_height = True
         self.goes_to_school = True
-        self._likes_toys = True
+        self._likes_toys = True  # _likes_toys represents protected member
 
     def impatient(self):
         return"yess"
@@ -125,7 +151,7 @@ class Boy(Men):  # inherited Men class
                                                 # message instead of giving technical error that user can't understand
             return "boy will not share his playstation"
 
-    def __likes_chocolates(self):
+    def __likes_chocolates(self): ## __ likes_chocolates is private member
         try:
             return object_boy.__likes_chocolates()   ## If attributeError occurs, it will print the defined error
                                                     # message instead of giving technical error that user can't understand
@@ -143,6 +169,12 @@ print(object_boy. _likes_playstation())
 ````
 
 ## Step- 5 - Girls class and Polymorphism
+
+### Polymorphism in python defines methods in the child class that have the same name as the methods in the parent class
+### inheritance, the child class inherits the methods from the parent class. Also, it is possible to modify a method in a child class that it has inherited from the parent class.
+
+
+
 
 ````
 from female import Female  # importing Female class from female file
