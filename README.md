@@ -1,3 +1,20 @@
+## What is oop (Object orient programing) ?
+- Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An    object can be defined as a data field that has unique attributes and behavior.
+
+- OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them. This approach to programming is well-suited for programs that are large, complex and actively updated or maintained. This includes programs for manufacturing and design, as well as mobile applications; for example, OOP can be used for manufacturing system simulation software
+
+## There are four pillars of python oop:
+
+1) Abstraction:
+2) Inheritance
+3) Encapsulation 
+4) Polymorphism
+
+
+
+
+
+
 # Python oop practice task
 
 <img width="399" alt="Human inheritance" src="https://user-images.githubusercontent.com/110182832/182912842-756fdd77-1cf1-40bb-851a-15b8ba625799.png">
@@ -18,19 +35,16 @@
 -  Create 5 python files (human, male, female, boy and girl)  created graph as above to follow inheritance
 -  Here, human is a parent tag and male and female are child tags.
 -  boy is child tag of male and girl is a child tag of female.
--  
--  
+  
 
-
-
-## Step-1 Class Human and Abstraction
-
+## Step-1 Class Human 
+-Abstraction in python is defined as a process of handling complexity by hiding unnecessary information from the user
 - ## Create a class called human
 
 
 ````
 class Human:
-    def __init__(self): # __init__ is used to declare class attribute
+    def __init__(self):    # __init__ is used to declare class attribute
         self.alive = True
         self.eyes = True
         self.hands = True
@@ -50,8 +64,13 @@ print(object_of_human.eyes)
 print(object_of_human.sleep())
 ````
 
-## Step - 2 - Male and Inheritance
+## Step - 2  
 
+### Abstraction:
+### -Abstraction in python is defined as a process of handling complexity by hiding unnecessary information from the user
+### - That enables the user to implement even more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden background/back-end complexity.
+
+### Inheritance:
 ### Inheritance allows us to define a class that inherits all the methods and properties from another class.
 ### Parent class is the class being inherited from, also called base class. Child class is the class that inherits from another class, also called derived class.
 
