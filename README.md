@@ -65,16 +65,16 @@ print(object_of_human.sleep())
 
 ## Step - 2  
 
-- Abstraction:
-### Abstraction in python is defined as a process of handling complexity by hiding unnecessary information from the user
-### That enables the user to implement even more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden background/back-end complexity.
+### Abstraction:
+- Abstraction in python is defined as a process of handling complexity by hiding unnecessary information from the user
+- That enables the user to implement even more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden background/back-end complexity.
 
-- Inheritance:
-### Inheritance allows us to define a class that inherits all the methods and properties from another class.
-### Parent class is the class being inherited from, also called base class. Child class is the class that inherits from another class, also called derived class.
+### Inheritance:
+- Inheritance allows us to define a class that inherits all the methods and properties from another class.
+- Parent class is the class being inherited from, also called base class. Child class is the class that inherits from another class, also called derived class.
 
 
-- ### From human file, Human class has imported 
+- From human file, Human class has imported 
 ````
 from human import Human
 
